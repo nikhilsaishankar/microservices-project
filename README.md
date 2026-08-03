@@ -37,6 +37,10 @@ and it defeats the purpose of a microservices architecture. Instead:
   every branch automatically and creates one sub-job per branch — no manual job
   creation per service.
 
+### Architecture Diagram
+
+![CI/CD architecture — GitHub branches to Jenkins Multibranch to Docker Hub to EKS](docs/images/architecture-diagram.svg)
+
 ### Pipeline Overview
 
 ```
