@@ -120,20 +120,39 @@
   </g>
 
   <!-- ================= CONNECTORS (wings -> stack) ================= -->
-  <g fill="none" stroke-dasharray="3 4">
-    <path d="M300,390 L320,439" stroke="#12A187" stroke-width="1.6"/>
-    <path d="M300,436 L320,439" stroke="#12A187" stroke-width="1.6"/>
-    <path d="M300,482 L320,439" stroke="#12A187" stroke-width="1.6"/>
-    <path d="M300,528 L320,439" stroke="#12A187" stroke-width="1.6"/>
-
-    <path d="M600,390 L550,582" stroke="#F2701C" stroke-width="1.6"/>
-    <path d="M600,432 L550,582" stroke="#F2701C" stroke-width="1.6"/>
-    <path d="M600,474 L550,582" stroke="#F2701C" stroke-width="1.6"/>
-    <path d="M600,516 L550,582" stroke="#F2701C" stroke-width="1.6"/>
-    <path d="M600,558 L550,582" stroke="#F2701C" stroke-width="1.6"/>
+  <!-- left bus: 4 trigger pills tap into a shared vertical bus, which feeds GitHub Repository + Multibranch Scan -->
+  <g fill="none" stroke="#12A187" stroke-width="1.6" stroke-dasharray="3 4">
+    <path d="M310,390 L310,528"/>
+    <path d="M300,390 L310,390"/>
+    <path d="M300,436 L310,436"/>
+    <path d="M300,482 L310,482"/>
+    <path d="M300,528 L310,528"/>
+    <path d="M310,399 L320,399"/>
+    <path d="M310,479 L320,479"/>
   </g>
-  <circle cx="320" cy="439" r="4" fill="#12A187"/>
-  <circle cx="550" cy="582" r="4" fill="#F2701C"/>
+  <circle cx="300" cy="390" r="3" fill="#12A187"/>
+  <circle cx="300" cy="436" r="3" fill="#12A187"/>
+  <circle cx="300" cy="482" r="3" fill="#12A187"/>
+  <circle cx="300" cy="528" r="3" fill="#12A187"/>
+  <circle cx="310" cy="399" r="3" fill="#12A187"/>
+  <circle cx="310" cy="479" r="3" fill="#12A187"/>
+
+  <!-- right bus: 5 per-service pills tap into a shared vertical bus, which feeds the Build Executor Pool -->
+  <g fill="none" stroke="#F2701C" stroke-width="1.6" stroke-dasharray="3 4">
+    <path d="M590,390 L590,582"/>
+    <path d="M600,390 L590,390"/>
+    <path d="M600,432 L590,432"/>
+    <path d="M600,474 L590,474"/>
+    <path d="M600,516 L590,516"/>
+    <path d="M600,558 L590,558"/>
+    <path d="M590,582 L550,582"/>
+  </g>
+  <circle cx="600" cy="390" r="3" fill="#F2701C"/>
+  <circle cx="600" cy="432" r="3" fill="#F2701C"/>
+  <circle cx="600" cy="474" r="3" fill="#F2701C"/>
+  <circle cx="600" cy="516" r="3" fill="#F2701C"/>
+  <circle cx="600" cy="558" r="3" fill="#F2701C"/>
+  <circle cx="550" cy="582" r="3" fill="#F2701C"/>
 
   <!-- ================= CENTRAL STACK ================= -->
   <!-- 1. GitHub Repository -->
