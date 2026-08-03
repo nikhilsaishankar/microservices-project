@@ -174,7 +174,6 @@
 
   <path d="M440,513 L450,519 L460,513" fill="none" stroke="#14171C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
   <path d="M440,521 L450,527 L460,521" fill="none" stroke="#14171C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-  <line x1="450" y1="533" x2="450" y2="560" stroke="#14171C" stroke-width="1.6"/>
 
   <!-- ================= 3. PER-BRANCH BUILD — FANS OUT PER BRANCH ================= -->
   <text x="450" y="558" text-anchor="middle" font-size="10" font-weight="700" fill="#8A93A1" letter-spacing="0.6">EACH BRANCH BUILDS ON ITS OWN</text>
