@@ -6,6 +6,39 @@ onto an **AWS EKS** cluster with **Kubernetes**.
 
 ---
 
+## About
+
+**Online Boutique** is a sample e-commerce app — users can browse products, add
+them to a cart, and check out — built as a set of small, independently
+deployable microservices rather than one monolith. Each service owns its own
+codebase, `Dockerfile`, and language runtime.
+
+| Service | Role |
+|---|---|
+| `frontend` | Web UI; the only service exposed externally (via `LoadBalancer`) |
+| `cartservice` | Stores items in a user's cart (backed by `redis-cart`) |
+| `productcatalogservice` | Lists products, fetches product details |
+| `currencyservice` | Converts prices between currencies |
+| `paymentservice` | Charges a credit card (mock) |
+| `shippingservice` | Quotes shipping costs, ships items (mock) |
+| `emailservice` | Sends order confirmation emails (mock) |
+| `checkoutservice` | Orchestrates the checkout flow across other services |
+| `recommendationservice` | Recommends other products given the cart |
+| `adservice` | Serves text ads based on context |
+| `loadgenerator` | Continuously sends synthetic traffic to `frontend` |
+| `redis-cart` | In-cluster cache backing `cartservice` |
+
+**Repo layout — one branch per service:** each service above lives on its own
+Git branch with its own `Jenkinsfile` and `Dockerfile`; the `main` branch holds
+only the Kubernetes manifest ([`deployment-service.yml`](./deployment-service.yml))
+and the cluster-deploy `Jenkinsfile`. See **Advanced Deployment** below for how
+Jenkins builds and ships each one independently.
+
+**Stack:** Docker · Jenkins (Multibranch Pipeline) · Docker Hub · Kubernetes ·
+AWS EKS.
+
+---
+
 ## Advanced Deployment
 
 ![CI/CD](https://img.shields.io/badge/CI%2FCD-Jenkins-D24939?logo=jenkins&logoColor=white)
