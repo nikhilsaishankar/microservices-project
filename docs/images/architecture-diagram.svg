@@ -1,257 +1,205 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 760" font-family="'Helvetica Neue', Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 620" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">
   <defs>
-    <pattern id="grid-fine" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M40 0 H0 V40" fill="none" stroke="#EAF2FA" stroke-opacity="0.05" stroke-width="1"/>
-    </pattern>
-    <pattern id="grid-major" width="200" height="200" patternUnits="userSpaceOnUse">
-      <path d="M200 0 H0 V200" fill="none" stroke="#EAF2FA" stroke-opacity="0.09" stroke-width="1.2"/>
-    </pattern>
-    <radialGradient id="vignette" cx="50%" cy="42%" r="78%">
-      <stop offset="0%" stop-color="#0E3559"/>
-      <stop offset="100%" stop-color="#081F36"/>
-    </radialGradient>
-
-    <symbol id="i-person" viewBox="0 0 32 32">
-      <circle cx="16" cy="11" r="5" fill="none" stroke="currentColor" stroke-width="2"/>
-      <path d="M6,27 C6,19 10.5,15 16,15 C21.5,15 26,19 26,27" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    <symbol id="i-push" viewBox="0 0 32 32">
+      <line x1="16" y1="24" x2="16" y2="10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <path d="M9,17 L16,10 L23,17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <line x1="8" y1="25" x2="24" y2="25" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
     </symbol>
-
     <symbol id="i-scan" viewBox="0 0 32 32">
-      <circle cx="16" cy="16" r="10.5" fill="none" stroke="currentColor" stroke-width="1.8"/>
-      <circle cx="16" cy="16" r="6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-opacity="0.7"/>
-      <line x1="16" y1="16" x2="24.5" y2="7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="16" cy="16" r="10" fill="none" stroke="currentColor" stroke-width="1.9"/>
+      <circle cx="16" cy="16" r="5.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-opacity="0.7"/>
+      <line x1="16" y1="16" x2="24" y2="8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
       <circle cx="16" cy="16" r="1.8" fill="currentColor"/>
     </symbol>
-
-    <symbol id="i-container" viewBox="0 0 32 32">
-      <rect x="5" y="9" width="22" height="14" rx="1.4" fill="none" stroke="currentColor" stroke-width="1.9"/>
-      <line x1="9.5" y1="9" x2="9.5" y2="23" stroke="currentColor" stroke-width="1.3" stroke-opacity="0.75"/>
-      <line x1="14" y1="9" x2="14" y2="23" stroke="currentColor" stroke-width="1.3" stroke-opacity="0.75"/>
-      <line x1="18" y1="9" x2="18" y2="23" stroke="currentColor" stroke-width="1.3" stroke-opacity="0.75"/>
-      <line x1="22.5" y1="9" x2="22.5" y2="23" stroke="currentColor" stroke-width="1.3" stroke-opacity="0.75"/>
+    <symbol id="i-terminal" viewBox="0 0 32 32">
+      <rect x="5" y="7" width="22" height="18" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.9"/>
+      <path d="M10,13 l4,4 l-4,4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <line x1="17" y1="21" x2="22" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
     </symbol>
-
+    <symbol id="i-layers" viewBox="0 0 32 32">
+      <path d="M16,6 L27,12 L16,18 L5,12 Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+      <path d="M5,17 L16,23 L27,17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M5,22 L16,28 L27,22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
     <symbol id="i-helm" viewBox="0 0 32 32">
-      <circle cx="16" cy="16" r="10.5" fill="none" stroke="currentColor" stroke-width="1.9"/>
-      <circle cx="16" cy="16" r="3.1" fill="none" stroke="currentColor" stroke-width="1.9"/>
-      <line x1="16" y1="5.5" x2="16" y2="12.9" stroke="currentColor" stroke-width="1.8"/>
-      <line x1="16" y1="19.1" x2="16" y2="26.5" stroke="currentColor" stroke-width="1.8"/>
-      <line x1="5.5" y1="16" x2="12.9" y2="16" stroke="currentColor" stroke-width="1.8"/>
-      <line x1="19.1" y1="16" x2="26.5" y2="16" stroke="currentColor" stroke-width="1.8"/>
-      <line x1="8.9" y1="8.9" x2="13.7" y2="13.7" stroke="currentColor" stroke-width="1.8"/>
-      <line x1="18.3" y1="18.3" x2="23.1" y2="23.1" stroke="currentColor" stroke-width="1.8"/>
-      <line x1="23.1" y1="8.9" x2="18.3" y2="13.7" stroke="currentColor" stroke-width="1.8"/>
-      <line x1="13.7" y1="18.3" x2="8.9" y2="23.1" stroke="currentColor" stroke-width="1.8"/>
+      <circle cx="16" cy="16" r="10" fill="none" stroke="currentColor" stroke-width="1.9"/>
+      <circle cx="16" cy="16" r="3" fill="none" stroke="currentColor" stroke-width="1.9"/>
+      <line x1="16" y1="6" x2="16" y2="12.9" stroke="currentColor" stroke-width="1.8"/>
+      <line x1="16" y1="19.1" x2="16" y2="26" stroke="currentColor" stroke-width="1.8"/>
+      <line x1="6" y1="16" x2="12.9" y2="16" stroke="currentColor" stroke-width="1.8"/>
+      <line x1="19.1" y1="16" x2="26" y2="16" stroke="currentColor" stroke-width="1.8"/>
+      <line x1="9.1" y1="9.1" x2="13.7" y2="13.7" stroke="currentColor" stroke-width="1.8"/>
+      <line x1="18.3" y1="18.3" x2="22.9" y2="22.9" stroke="currentColor" stroke-width="1.8"/>
+      <line x1="22.9" y1="9.1" x2="18.3" y2="13.7" stroke="currentColor" stroke-width="1.8"/>
+      <line x1="13.7" y1="18.3" x2="9.1" y2="22.9" stroke="currentColor" stroke-width="1.8"/>
     </symbol>
-
-    <symbol id="i-pod" viewBox="0 0 32 32">
-      <path d="M16,4 L27,10 V22 L16,28 L5,22 V10 Z" fill="none" stroke="currentColor" stroke-width="1.8"/>
-      <path d="M16,16 L27,10 M16,16 V28 M16,16 L5,10" fill="none" stroke="currentColor" stroke-width="1.4" stroke-opacity="0.7"/>
+    <symbol id="i-globe" viewBox="0 0 32 32">
+      <circle cx="16" cy="16" r="11" fill="none" stroke="currentColor" stroke-width="1.8"/>
+      <ellipse cx="16" cy="16" rx="5" ry="11" fill="none" stroke="currentColor" stroke-width="1.4"/>
+      <line x1="5" y1="16" x2="27" y2="16" stroke="currentColor" stroke-width="1.4"/>
+      <path d="M7,10 h18 M7,22 h18" fill="none" stroke="currentColor" stroke-width="1.2"/>
     </symbol>
   </defs>
 
-  <!-- ================= BACKGROUND ================= -->
-  <rect x="0" y="0" width="1440" height="760" fill="url(#vignette)"/>
-  <rect x="0" y="0" width="1440" height="760" fill="url(#grid-fine)"/>
-  <rect x="0" y="0" width="1440" height="760" fill="url(#grid-major)"/>
+  <!-- background -->
+  <rect x="0" y="0" width="1400" height="620" fill="#10141A"/>
 
-  <!-- corner registration ticks -->
-  <g stroke="#EAF2FA" stroke-opacity="0.45" stroke-width="1.5" fill="none">
-    <path d="M20,44 V20 H44"/>
-    <path d="M1396,20 H1420 V44"/>
-    <path d="M20,716 V740 H44"/>
-    <path d="M1396,740 H1420 V716"/>
-  </g>
+  <!-- header -->
+  <text x="40" y="42" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11.5" letter-spacing="2" fill="#2DD8B8">JENKINS MULTIBRANCH PIPELINE</text>
+  <text x="40" y="76" font-size="25" font-weight="700" fill="#E7ECF2">How a push becomes a running service</text>
+  <line x1="40" y1="98" x2="1360" y2="98" stroke="#2A313D" stroke-width="1"/>
 
-  <!-- ================= HEADER ================= -->
-  <text x="64" y="54" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11.5" letter-spacing="2.5" fill="#6FD3E8">PIPELINE SCHEMATIC &#183; SHEET 1/1</text>
-  <text x="64" y="88" font-size="30" font-weight="800" letter-spacing="0.5" fill="#EAF2FA">MICROSERVICES CI/CD</text>
-  <text x="64" y="110" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12.5" fill="#9FC1D9">Jenkins Multibranch &#8594; Docker Hub &#8594; Kubernetes (EKS)</text>
+  <!-- connecting belt line behind stage cards -->
+  <line x1="40" y1="245" x2="1365" y2="245" stroke="#2A313D" stroke-width="2"/>
 
-  <g font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11.5" fill="#9FC1D9" text-anchor="end">
-    <text x="1376" y="54">REPO&#160;&#160;&#160;nikhilsaishankar/microservices-project</text>
-    <text x="1376" y="74">CLUSTER&#160;&#160;EKS-1 &#183; ap-south-1</text>
-    <text x="1376" y="94">NAMESPACE&#160;&#160;webapps</text>
-  </g>
-  <line x1="64" y1="126" x2="1376" y2="126" stroke="#EAF2FA" stroke-opacity="0.18" stroke-width="1"/>
-
-  <!-- ================= TRUNK LINE ================= -->
-  <line x1="100" y1="300" x2="1340" y2="300" stroke="#EAF2FA" stroke-opacity="0.55" stroke-width="2.5"/>
-
-  <!-- ================= ZONE TITLES ================= -->
-  <text x="540" y="152" text-anchor="middle" font-size="13" font-weight="700" letter-spacing="1.2" fill="#EAF2FA">PER-SERVICE BUILD &#8212; ONE JENKINSFILE PER BRANCH</text>
-  <text x="1140" y="152" text-anchor="middle" font-size="13" font-weight="700" letter-spacing="1.2" fill="#EAF2FA">RUNNING ON AWS EKS &#8212; NAMESPACE: webapps</text>
-
-  <!-- ================= DEVELOPER ================= -->
-  <g color="#EAF2FA">
-    <circle cx="60" cy="300" r="20" fill="none" stroke="#EAF2FA" stroke-width="1.8"/>
-    <use href="#i-person" x="44" y="284" width="32" height="32"/>
-  </g>
-  <text x="60" y="347" text-anchor="middle" font-size="12.5" font-weight="700" letter-spacing="0.8" fill="#EAF2FA">DEVELOPER</text>
-  <text x="60" y="363" text-anchor="middle" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="10.5" fill="#7FA4C0">pushes a branch</text>
-
-  <!-- Developer -> Push -->
-  <line x1="80" y1="300" x2="150" y2="300" stroke="#EAF2FA" stroke-opacity="0.55" stroke-width="2"/>
-
-  <!-- ================= PUSH (simple stop) ================= -->
-  <circle cx="160" cy="300" r="7" fill="#0B2F4F" stroke="#EAF2FA" stroke-width="2.4"/>
-  <text x="160" y="270" text-anchor="middle" font-size="12.5" font-weight="700" letter-spacing="0.8" fill="#EAF2FA">PUSH</text>
-  <text x="160" y="324" text-anchor="middle" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="10.5" fill="#7FA4C0">git push</text>
-
-  <!-- ================= SCAN & DISPATCH (hub) ================= -->
-  <circle cx="340" cy="300" r="22" fill="#123A5C" stroke="#6FD3E8" stroke-width="2.2"/>
-  <circle cx="340" cy="300" r="16" fill="none" stroke="#6FD3E8" stroke-width="1" stroke-opacity="0.5"/>
-  <use href="#i-scan" x="324" y="284" width="32" height="32" color="#6FD3E8"/>
-  <text x="340" y="260" text-anchor="middle" font-size="12.5" font-weight="700" letter-spacing="0.8" fill="#EAF2FA">SCAN &amp; DISPATCH</text>
-  <text x="340" y="341" text-anchor="middle" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="10.5" fill="#7FA4C0">indexes all 12 branches</text>
-
-  <!-- ================= FAN ZONE 1 : branch build lines ================= -->
-  <g fill="none" stroke-linecap="round">
-    <!-- paymentservice (active) -->
-    <path d="M362,300 L467,195 L613,195 L718,300" stroke="#E8A15D" stroke-width="6" stroke-opacity="0.22"/>
-    <path d="M362,300 L467,195 L613,195 L718,300" stroke="#E8A15D" stroke-width="2.2"/>
-    <!-- frontend (active) -->
-    <path d="M362,300 L425,237 L655,237 L718,300" stroke="#E8A15D" stroke-width="6" stroke-opacity="0.22"/>
-    <path d="M362,300 L425,237 L655,237 L718,300" stroke="#E8A15D" stroke-width="2.2"/>
-    <!-- cartservice (active) -->
-    <path d="M362,300 L383,279 L697,279 L718,300" stroke="#E8A15D" stroke-width="6" stroke-opacity="0.22"/>
-    <path d="M362,300 L383,279 L697,279 L718,300" stroke="#E8A15D" stroke-width="2.2"/>
-    <!-- currencyservice (idle) -->
-    <path d="M362,300 L383,321 L697,321 L718,300" stroke="#4A6B85" stroke-width="1.8" stroke-dasharray="2 4"/>
-    <!-- adservice (idle) -->
-    <path d="M362,300 L425,363 L655,363 L718,300" stroke="#4A6B85" stroke-width="1.8" stroke-dasharray="2 4"/>
-    <!-- checkoutservice (idle) -->
-    <path d="M362,300 L467,405 L613,405 L718,300" stroke="#4A6B85" stroke-width="1.8" stroke-dasharray="2 4"/>
-  </g>
-
-  <!-- build markers + labels -->
+  <!-- ===================== STAGE CARDS ===================== -->
+  <!-- Card 1: PUSH -->
   <g>
-    <rect x="533" y="188" width="14" height="14" rx="3" fill="#E8A15D"/>
-    <text x="560" y="199" font-size="12.5" font-weight="700" fill="#EAF2FA">paymentservice</text>
+    <rect x="40" y="130" width="205" height="230" rx="10" fill="#181D26" stroke="#232A35" stroke-width="1.3"/>
+    <circle cx="74" cy="168" r="18" fill="none" stroke="#2DD8B8" stroke-width="1.8"/>
+    <use href="#i-push" x="60" y="154" width="28" height="28" color="#2DD8B8"/>
+    <text x="58" y="222" font-size="16" font-weight="700" fill="#E7ECF2">Push</text>
+    <text x="58" y="244" font-size="11.5" fill="#9AA5B1">Developer commits to</text>
+    <text x="58" y="260" font-size="11.5" fill="#9AA5B1">one service's branch.</text>
+    <line x1="58" y1="308" x2="227" y2="308" stroke="#232A35" stroke-width="1"/>
+    <rect x="58" y="322" width="129" height="26" rx="13" fill="#10141A" stroke="#2A313D" stroke-width="1"/>
+    <text x="122.5" y="339" text-anchor="middle" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="10.5" fill="#C7CFD8">git push</text>
+  </g>
+
+  <!-- Card 2: SCAN -->
+  <g>
+    <rect x="264" y="130" width="205" height="230" rx="10" fill="#181D26" stroke="#232A35" stroke-width="1.3"/>
+    <circle cx="298" cy="168" r="18" fill="none" stroke="#2DD8B8" stroke-width="1.8"/>
+    <use href="#i-scan" x="284" y="154" width="28" height="28" color="#2DD8B8"/>
+    <text x="282" y="222" font-size="16" font-weight="700" fill="#E7ECF2">Scan</text>
+    <text x="282" y="244" font-size="11.5" fill="#9AA5B1">Jenkins re-indexes</text>
+    <text x="282" y="260" font-size="11.5" fill="#9AA5B1">every branch on schedule.</text>
+    <line x1="282" y1="308" x2="451" y2="308" stroke="#232A35" stroke-width="1"/>
+    <rect x="282" y="322" width="163" height="26" rx="13" fill="#10141A" stroke="#2A313D" stroke-width="1"/>
+    <text x="363.5" y="339" text-anchor="middle" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="10.5" fill="#C7CFD8">Scan Multibranch Now</text>
+  </g>
+
+  <!-- Card 3: BUILD & PUSH -->
+  <g>
+    <rect x="488" y="130" width="205" height="230" rx="10" fill="#181D26" stroke="#2DD8B8" stroke-width="1.6"/>
+    <circle cx="522" cy="168" r="18" fill="#123B34" stroke="#2DD8B8" stroke-width="1.8"/>
+    <use href="#i-terminal" x="508" y="154" width="28" height="28" color="#2DD8B8"/>
+    <text x="506" y="222" font-size="16" font-weight="700" fill="#E7ECF2">Build &amp; Push</text>
+    <text x="506" y="244" font-size="11.5" fill="#9AA5B1">Only branches with new</text>
+    <text x="506" y="260" font-size="11.5" fill="#9AA5B1">commits queue a build.</text>
+    <line x1="506" y1="308" x2="675" y2="308" stroke="#2A313D" stroke-width="1"/>
+    <rect x="506" y="322" width="163" height="26" rx="13" fill="#10141A" stroke="#2A313D" stroke-width="1"/>
+    <text x="587.5" y="339" text-anchor="middle" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="10.5" fill="#C7CFD8">docker build &amp;&amp; push</text>
+  </g>
+
+  <!-- Card 4: REGISTRY -->
+  <g>
+    <rect x="712" y="130" width="205" height="230" rx="10" fill="#181D26" stroke="#232A35" stroke-width="1.3"/>
+    <circle cx="746" cy="168" r="18" fill="none" stroke="#5B8DEF" stroke-width="1.8"/>
+    <use href="#i-layers" x="732" y="154" width="28" height="28" color="#5B8DEF"/>
+    <text x="730" y="222" font-size="16" font-weight="700" fill="#E7ECF2">Registry</text>
+    <text x="730" y="244" font-size="11.5" fill="#9AA5B1">Each image lands in</text>
+    <text x="730" y="260" font-size="11.5" fill="#9AA5B1">its own Docker Hub repo.</text>
+    <line x1="730" y1="308" x2="899" y2="308" stroke="#232A35" stroke-width="1"/>
+    <rect x="730" y="322" width="163" height="26" rx="13" fill="#10141A" stroke="#2A313D" stroke-width="1"/>
+    <text x="811.5" y="339" text-anchor="middle" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="10.5" fill="#C7CFD8">nikhilkotharu/&lt;service&gt;</text>
+  </g>
+
+  <!-- Card 5: DEPLOY -->
+  <g>
+    <rect x="936" y="130" width="205" height="230" rx="10" fill="#181D26" stroke="#232A35" stroke-width="1.3"/>
+    <circle cx="970" cy="168" r="18" fill="none" stroke="#5B8DEF" stroke-width="1.8"/>
+    <use href="#i-helm" x="956" y="154" width="28" height="28" color="#5B8DEF"/>
+    <text x="954" y="222" font-size="16" font-weight="700" fill="#E7ECF2">Deploy</text>
+    <text x="954" y="244" font-size="11.5" fill="#9AA5B1">Main branch rolls the</text>
+    <text x="954" y="260" font-size="11.5" fill="#9AA5B1">manifest onto EKS-1.</text>
+    <line x1="954" y1="308" x2="1123" y2="308" stroke="#232A35" stroke-width="1"/>
+    <rect x="954" y="322" width="163" height="26" rx="13" fill="#10141A" stroke="#2A313D" stroke-width="1"/>
+    <text x="1035.5" y="339" text-anchor="middle" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="10.5" fill="#C7CFD8">kubectl apply</text>
+  </g>
+
+  <!-- Card 6: LIVE -->
+  <g>
+    <rect x="1160" y="130" width="205" height="230" rx="10" fill="#181D26" stroke="#232A35" stroke-width="1.3"/>
+    <circle cx="1194" cy="168" r="18" fill="none" stroke="#E8A15D" stroke-width="1.8"/>
+    <use href="#i-globe" x="1180" y="154" width="28" height="28" color="#E8A15D"/>
+    <text x="1178" y="222" font-size="16" font-weight="700" fill="#E7ECF2">Live</text>
+    <text x="1178" y="244" font-size="11.5" fill="#9AA5B1">11 services + Redis</text>
+    <text x="1178" y="260" font-size="11.5" fill="#9AA5B1">serve traffic in webapps.</text>
+    <line x1="1178" y1="308" x2="1347" y2="308" stroke="#232A35" stroke-width="1"/>
+    <rect x="1178" y="322" width="163" height="26" rx="13" fill="#10141A" stroke="#2A313D" stroke-width="1"/>
+    <text x="1259.5" y="339" text-anchor="middle" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="10.5" fill="#C7CFD8">frontend &#8594; LoadBalancer</text>
+  </g>
+
+  <!-- arrows between cards -->
+  <g fill="none" stroke="#4A5568" stroke-width="1.8" stroke-linecap="round">
+    <path d="M250,245 L259,245 M255,240 L260,245 L255,250"/>
+    <path d="M474,245 L483,245 M479,240 L484,245 L479,250"/>
+    <path d="M698,245 L707,245 M703,240 L708,245 L703,250"/>
+    <path d="M922,245 L931,245 M927,240 L932,245 L927,250"/>
+    <path d="M1146,245 L1155,245 M1151,240 L1156,245 L1151,250"/>
+  </g>
+
+  <!-- ===================== INCREMENTAL BUILD, AT A GLANCE ===================== -->
+  <text x="40" y="404" font-size="12.5" font-weight="700" letter-spacing="1" fill="#2DD8B8">THIS SCAN, ONLY 3 OF 11 BRANCHES REBUILT</text>
+
+  <!-- row 1: active chips -->
+  <g>
+    <rect x="40" y="420" width="150" height="28" rx="14" fill="#123B34" stroke="#2DD8B8" stroke-width="1.3"/>
+    <circle cx="58" cy="434" r="4" fill="#2DD8B8"/>
+    <text x="70" y="438" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#E7ECF2">frontend</text>
   </g>
   <g>
-    <rect x="533" y="230" width="14" height="14" rx="3" fill="#E8A15D"/>
-    <text x="560" y="241" font-size="12.5" font-weight="700" fill="#EAF2FA">frontend</text>
+    <rect x="200" y="420" width="150" height="28" rx="14" fill="#123B34" stroke="#2DD8B8" stroke-width="1.3"/>
+    <circle cx="218" cy="434" r="4" fill="#2DD8B8"/>
+    <text x="230" y="438" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#E7ECF2">cartservice</text>
   </g>
   <g>
-    <rect x="533" y="272" width="14" height="14" rx="3" fill="#E8A15D"/>
-    <text x="560" y="283" font-size="12.5" font-weight="700" fill="#EAF2FA">cartservice</text>
-  </g>
-  <g>
-    <rect x="533" y="314" width="14" height="14" rx="3" fill="none" stroke="#4A6B85" stroke-width="1.6"/>
-    <text x="560" y="325" font-size="12.5" fill="#7FA4C0">currencyservice</text>
-  </g>
-  <g>
-    <rect x="533" y="356" width="14" height="14" rx="3" fill="none" stroke="#4A6B85" stroke-width="1.6"/>
-    <text x="560" y="367" font-size="12.5" fill="#7FA4C0">adservice</text>
-  </g>
-  <g>
-    <rect x="533" y="398" width="14" height="14" rx="3" fill="none" stroke="#4A6B85" stroke-width="1.6"/>
-    <text x="560" y="409" font-size="12.5" fill="#7FA4C0">checkoutservice</text>
+    <rect x="360" y="420" width="150" height="28" rx="14" fill="#123B34" stroke="#2DD8B8" stroke-width="1.3"/>
+    <circle cx="378" cy="434" r="4" fill="#2DD8B8"/>
+    <text x="390" y="438" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#E7ECF2">paymentservice</text>
   </g>
 
-  <text x="540" y="450" text-anchor="middle" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#7FA4C0">+ 5 more branches, same one-Jenkinsfile pattern</text>
-
-  <!-- ================= DOCKER HUB (hub) ================= -->
-  <circle cx="740" cy="300" r="22" fill="#123A5C" stroke="#2FB6E0" stroke-width="2.2"/>
-  <use href="#i-container" x="724" y="284" width="32" height="32" color="#2FB6E0"/>
-  <text x="740" y="260" text-anchor="middle" font-size="12.5" font-weight="700" letter-spacing="0.8" fill="#EAF2FA">DOCKER HUB</text>
-  <text x="740" y="341" text-anchor="middle" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="10.5" fill="#7FA4C0">nikhilkotharu/*:latest</text>
-
-  <!-- Docker Hub -> EKS trunk -->
-  <line x1="762" y1="300" x2="958" y2="300" stroke="#EAF2FA" stroke-opacity="0.55" stroke-width="2.5"/>
-  <text x="860" y="290" text-anchor="middle" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="10.5" fill="#7FA4C0">kubectl apply</text>
-
-  <!-- ================= AWS EKS (hub) ================= -->
-  <circle cx="980" cy="300" r="22" fill="#123A5C" stroke="#8C8CE8" stroke-width="2.2"/>
-  <use href="#i-helm" x="964" y="284" width="32" height="32" color="#8C8CE8"/>
-  <text x="980" y="260" text-anchor="middle" font-size="12.5" font-weight="700" letter-spacing="0.8" fill="#EAF2FA">AWS EKS</text>
-  <text x="980" y="341" text-anchor="middle" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="10.5" fill="#7FA4C0">EKS-1 &#183; webapps</text>
-
-  <!-- ================= FAN ZONE 2 : running pods ================= -->
-  <g fill="none" stroke-linecap="round">
-    <!-- frontend (active, continues to shopper) -->
-    <path d="M1002,300 L1086,216 L1180,216" stroke="#E8A15D" stroke-width="6" stroke-opacity="0.22"/>
-    <path d="M1002,300 L1086,216 L1180,216" stroke="#E8A15D" stroke-width="2.2"/>
-    <path d="M1180,216 L1240,300 L1320,300" stroke="#E8A15D" stroke-width="6" stroke-opacity="0.22"/>
-    <path d="M1180,216 L1240,300 L1320,300" stroke="#E8A15D" stroke-width="2.2"/>
-    <!-- cartservice -->
-    <path d="M1002,300 L1030,272 L1180,272" stroke="#9FC1D9" stroke-width="2" stroke-opacity="0.8"/>
-    <!-- paymentservice -->
-    <path d="M1002,300 L1030,328 L1180,328" stroke="#9FC1D9" stroke-width="2" stroke-opacity="0.8"/>
-    <!-- redis-cart -->
-    <path d="M1002,300 L1086,384 L1180,384" stroke="#9FC1D9" stroke-width="2" stroke-opacity="0.8"/>
+  <!-- dimmed chips (unchanged, skipped) -->
+  <g stroke="#2A313D" stroke-width="1.3" fill="#161A22">
+    <rect x="520" y="420" width="150" height="28" rx="14"/>
+    <rect x="680" y="420" width="150" height="28" rx="14"/>
+    <rect x="840" y="420" width="150" height="28" rx="14"/>
+    <rect x="40" y="458" width="150" height="28" rx="14"/>
+    <rect x="200" y="458" width="150" height="28" rx="14"/>
+    <rect x="360" y="458" width="190" height="28" rx="14"/>
+    <rect x="560" y="458" width="190" height="28" rx="14"/>
+    <rect x="760" y="458" width="150" height="28" rx="14"/>
+  </g>
+  <g fill="none" stroke="#4A5568" stroke-width="1.4">
+    <circle cx="538" cy="434" r="4"/>
+    <circle cx="698" cy="434" r="4"/>
+    <circle cx="858" cy="434" r="4"/>
+    <circle cx="58" cy="472" r="4"/>
+    <circle cx="218" cy="472" r="4"/>
+    <circle cx="378" cy="472" r="4"/>
+    <circle cx="578" cy="472" r="4"/>
+    <circle cx="778" cy="472" r="4"/>
+  </g>
+  <g font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#6B7682">
+    <text x="550" y="438">adservice</text>
+    <text x="710" y="438">checkoutservice</text>
+    <text x="870" y="438">currencyservice</text>
+    <text x="70" y="476">emailservice</text>
+    <text x="230" y="476">loadgenerator</text>
+    <text x="390" y="476">productcatalogservice</text>
+    <text x="590" y="476">recommendationservice</text>
+    <text x="790" y="476">shippingservice</text>
   </g>
 
-  <g color="#E8A15D">
-    <rect x="1180" y="202" width="28" height="28" rx="6" fill="#123A5C" stroke="#E8A15D" stroke-width="2"/>
-    <use href="#i-pod" x="1184" y="206" width="20" height="20"/>
-  </g>
-  <text x="1214" y="221" font-size="12.5" font-weight="700" fill="#EAF2FA">frontend</text>
-  <text x="1214" y="236" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="10" fill="#7FA4C0">LoadBalancer</text>
+  <!-- legend -->
+  <circle cx="1050" cy="428" r="4" fill="#2DD8B8"/>
+  <text x="1062" y="432" font-size="11.5" fill="#C7CFD8">rebuilt this run</text>
+  <circle cx="1050" cy="466" r="4" fill="none" stroke="#4A5568" stroke-width="1.4"/>
+  <text x="1062" y="470" font-size="11.5" fill="#C7CFD8">unchanged &#8212; skipped</text>
 
-  <g color="#9FC1D9">
-    <rect x="1180" y="258" width="28" height="28" rx="6" fill="#123A5C" stroke="#9FC1D9" stroke-width="1.7"/>
-    <use href="#i-pod" x="1184" y="262" width="20" height="20"/>
-  </g>
-  <text x="1214" y="277" font-size="12.5" fill="#D7E7F2">cartservice</text>
-
-  <g color="#9FC1D9">
-    <rect x="1180" y="314" width="28" height="28" rx="6" fill="#123A5C" stroke="#9FC1D9" stroke-width="1.7"/>
-    <use href="#i-pod" x="1184" y="318" width="20" height="20"/>
-  </g>
-  <text x="1214" y="333" font-size="12.5" fill="#D7E7F2">paymentservice</text>
-
-  <g color="#9FC1D9">
-    <rect x="1180" y="370" width="28" height="28" rx="6" fill="#123A5C" stroke="#9FC1D9" stroke-width="1.7"/>
-    <use href="#i-pod" x="1184" y="374" width="20" height="20"/>
-  </g>
-  <text x="1214" y="389" font-size="12.5" fill="#D7E7F2">redis-cart</text>
-
-  <text x="1140" y="450" text-anchor="middle" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#7FA4C0">+ 8 more Deployments running in webapps</text>
-
-  <!-- ================= SHOPPER ================= -->
-  <g color="#EAF2FA">
-    <circle cx="1380" cy="300" r="20" fill="none" stroke="#EAF2FA" stroke-width="1.8"/>
-    <use href="#i-person" x="1364" y="284" width="32" height="32"/>
-  </g>
-  <text x="1380" y="347" text-anchor="middle" font-size="12.5" font-weight="700" letter-spacing="0.8" fill="#EAF2FA">SHOPPER</text>
-  <text x="1380" y="363" text-anchor="middle" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="10.5" fill="#7FA4C0">browses Online Boutique</text>
-
-  <!-- ================= LEGEND ================= -->
-  <rect x="64" y="550" width="360" height="140" rx="6" fill="none" stroke="#EAF2FA" stroke-opacity="0.35" stroke-width="1.3"/>
-  <text x="84" y="574" font-size="11.5" font-weight="700" letter-spacing="1.5" fill="#6FD3E8">KEY</text>
-
-  <line x1="84" y1="598" x2="124" y2="598" stroke="#E8A15D" stroke-width="2.6"/>
-  <text x="136" y="602" font-size="12" fill="#D7E7F2">Branch rebuilt this scan &#8212; active</text>
-
-  <line x1="84" y1="626" x2="124" y2="626" stroke="#4A6B85" stroke-width="1.8" stroke-dasharray="2 4"/>
-  <text x="136" y="630" font-size="12" fill="#D7E7F2">Branch unchanged &#8212; build skipped</text>
-
-  <circle cx="104" cy="654" r="9" fill="#123A5C" stroke="#6FD3E8" stroke-width="1.8"/>
-  <text x="136" y="658" font-size="12" fill="#D7E7F2">Interchange stage (Scan / Registry / EKS)</text>
-
-  <!-- ================= TITLE BLOCK ================= -->
-  <rect x="1016" y="550" width="360" height="140" rx="6" fill="none" stroke="#EAF2FA" stroke-opacity="0.35" stroke-width="1.3"/>
-  <line x1="1016" y1="584" x2="1376" y2="584" stroke="#EAF2FA" stroke-opacity="0.25" stroke-width="1"/>
-  <line x1="1016" y1="618" x2="1376" y2="618" stroke="#EAF2FA" stroke-opacity="0.25" stroke-width="1"/>
-  <line x1="1016" y1="652" x2="1376" y2="652" stroke="#EAF2FA" stroke-opacity="0.25" stroke-width="1"/>
-  <line x1="1196" y1="652" x2="1196" y2="690" stroke="#EAF2FA" stroke-opacity="0.25" stroke-width="1"/>
-
-  <g font-family="ui-monospace,'SF Mono',Consolas,monospace">
-    <text x="1032" y="570" font-size="10" letter-spacing="1" fill="#6FD3E8">PROJECT</text>
-    <text x="1032" y="603" font-size="12.5" fill="#EAF2FA">microservices-project</text>
-
-    <text x="1032" y="637" font-size="10" letter-spacing="1" fill="#6FD3E8">PIPELINE</text>
-    <text x="1032" y="670" font-size="12.5" fill="#EAF2FA">Jenkins Multibranch</text>
-
-    <text x="1032" y="683" font-size="10" letter-spacing="1" fill="#6FD3E8">SCALE</text>
-    <text x="1096" y="683" font-size="12.5" fill="#EAF2FA">NTS</text>
-    <text x="1212" y="683" font-size="10" letter-spacing="1" fill="#6FD3E8">REV</text>
-    <text x="1256" y="683" font-size="12.5" fill="#EAF2FA">1.0</text>
-  </g>
-
-  <!-- ================= CAPTION ================= -->
-  <text x="720" y="620" text-anchor="middle" font-size="13.5" font-weight="600" fill="#EAF2FA">Only branches with new commits are rebuilt.</text>
-  <text x="720" y="640" text-anchor="middle" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#7FA4C0">Every other service's pipeline stays idle until its own branch changes.</text>
+  <!-- footer -->
+  <line x1="40" y1="522" x2="1360" y2="522" stroke="#2A313D" stroke-width="1"/>
+  <text x="40" y="548" font-size="12.5" fill="#9AA5B1">Independent branches, independent images, one shared Kubernetes namespace.</text>
+  <text x="1360" y="548" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#4A5568">EKS-1 &#183; ap-south-1 &#183; webapps</text>
 </svg>
