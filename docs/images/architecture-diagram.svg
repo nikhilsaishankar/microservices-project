@@ -1,205 +1,244 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 620" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1300" font-family="-apple-system,'Segoe UI',Helvetica,Arial,sans-serif">
   <defs>
-    <symbol id="i-push" viewBox="0 0 32 32">
-      <line x1="16" y1="24" x2="16" y2="10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-      <path d="M9,17 L16,10 L23,17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      <line x1="8" y1="25" x2="24" y2="25" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    <symbol id="i-person" viewBox="0 0 32 32">
+      <circle cx="16" cy="11" r="5.5" fill="none" stroke="currentColor" stroke-width="2.2"/>
+      <path d="M5,27 C5,18.5 10,14.5 16,14.5 C22,14.5 27,18.5 27,27" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="i-git" viewBox="0 0 32 32">
+      <circle cx="9" cy="8" r="3.3" fill="none" stroke="currentColor" stroke-width="2.1"/>
+      <circle cx="9" cy="24" r="3.3" fill="none" stroke="currentColor" stroke-width="2.1"/>
+      <circle cx="23" cy="16" r="3.3" fill="none" stroke="currentColor" stroke-width="2.1"/>
+      <path d="M9,11.3 V20.7" stroke="currentColor" stroke-width="2.1"/>
+      <path d="M9,19 C9,15.3 14,15.6 19.8,15.9" fill="none" stroke="currentColor" stroke-width="2.1"/>
     </symbol>
     <symbol id="i-scan" viewBox="0 0 32 32">
-      <circle cx="16" cy="16" r="10" fill="none" stroke="currentColor" stroke-width="1.9"/>
-      <circle cx="16" cy="16" r="5.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-opacity="0.7"/>
-      <line x1="16" y1="16" x2="24" y2="8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="16" cy="16" r="10" fill="none" stroke="currentColor" stroke-width="2"/>
+      <circle cx="16" cy="16" r="5.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-opacity="0.75"/>
+      <line x1="16" y1="16" x2="24" y2="8" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/>
       <circle cx="16" cy="16" r="1.8" fill="currentColor"/>
     </symbol>
     <symbol id="i-terminal" viewBox="0 0 32 32">
-      <rect x="5" y="7" width="22" height="18" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.9"/>
-      <path d="M10,13 l4,4 l-4,4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      <line x1="17" y1="21" x2="22" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <rect x="5" y="7" width="22" height="18" rx="2.5" fill="none" stroke="currentColor" stroke-width="2.1"/>
+      <path d="M10,13 l4,4 l-4,4" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      <line x1="17" y1="21" x2="22" y2="21" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
     </symbol>
     <symbol id="i-layers" viewBox="0 0 32 32">
-      <path d="M16,6 L27,12 L16,18 L5,12 Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
-      <path d="M5,17 L16,23 L27,17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M5,22 L16,28 L27,22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M16,6 L27,12 L16,18 L5,12 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M5,17 L16,23 L27,17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M5,22 L16,28 L27,22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
     <symbol id="i-helm" viewBox="0 0 32 32">
-      <circle cx="16" cy="16" r="10" fill="none" stroke="currentColor" stroke-width="1.9"/>
-      <circle cx="16" cy="16" r="3" fill="none" stroke="currentColor" stroke-width="1.9"/>
-      <line x1="16" y1="6" x2="16" y2="12.9" stroke="currentColor" stroke-width="1.8"/>
-      <line x1="16" y1="19.1" x2="16" y2="26" stroke="currentColor" stroke-width="1.8"/>
-      <line x1="6" y1="16" x2="12.9" y2="16" stroke="currentColor" stroke-width="1.8"/>
-      <line x1="19.1" y1="16" x2="26" y2="16" stroke="currentColor" stroke-width="1.8"/>
-      <line x1="9.1" y1="9.1" x2="13.7" y2="13.7" stroke="currentColor" stroke-width="1.8"/>
-      <line x1="18.3" y1="18.3" x2="22.9" y2="22.9" stroke="currentColor" stroke-width="1.8"/>
-      <line x1="22.9" y1="9.1" x2="18.3" y2="13.7" stroke="currentColor" stroke-width="1.8"/>
-      <line x1="13.7" y1="18.3" x2="9.1" y2="22.9" stroke="currentColor" stroke-width="1.8"/>
+      <circle cx="16" cy="16" r="10" fill="none" stroke="currentColor" stroke-width="2"/>
+      <circle cx="16" cy="16" r="3" fill="none" stroke="currentColor" stroke-width="2"/>
+      <line x1="16" y1="6" x2="16" y2="12.9" stroke="currentColor" stroke-width="1.9"/>
+      <line x1="16" y1="19.1" x2="16" y2="26" stroke="currentColor" stroke-width="1.9"/>
+      <line x1="6" y1="16" x2="12.9" y2="16" stroke="currentColor" stroke-width="1.9"/>
+      <line x1="19.1" y1="16" x2="26" y2="16" stroke="currentColor" stroke-width="1.9"/>
+      <line x1="9.1" y1="9.1" x2="13.7" y2="13.7" stroke="currentColor" stroke-width="1.9"/>
+      <line x1="18.3" y1="18.3" x2="22.9" y2="22.9" stroke="currentColor" stroke-width="1.9"/>
+      <line x1="22.9" y1="9.1" x2="18.3" y2="13.7" stroke="currentColor" stroke-width="1.9"/>
+      <line x1="13.7" y1="18.3" x2="9.1" y2="22.9" stroke="currentColor" stroke-width="1.9"/>
     </symbol>
-    <symbol id="i-globe" viewBox="0 0 32 32">
-      <circle cx="16" cy="16" r="11" fill="none" stroke="currentColor" stroke-width="1.8"/>
-      <ellipse cx="16" cy="16" rx="5" ry="11" fill="none" stroke="currentColor" stroke-width="1.4"/>
-      <line x1="5" y1="16" x2="27" y2="16" stroke="currentColor" stroke-width="1.4"/>
-      <path d="M7,10 h18 M7,22 h18" fill="none" stroke="currentColor" stroke-width="1.2"/>
+    <symbol id="i-server" viewBox="0 0 32 32">
+      <rect x="5" y="6" width="22" height="8" rx="1.8" fill="none" stroke="currentColor" stroke-width="2"/>
+      <rect x="5" y="18" width="22" height="8" rx="1.8" fill="none" stroke="currentColor" stroke-width="2"/>
+      <circle cx="9.5" cy="10" r="1.3" fill="currentColor"/>
+      <circle cx="9.5" cy="22" r="1.3" fill="currentColor"/>
     </symbol>
   </defs>
 
-  <!-- background -->
-  <rect x="0" y="0" width="1400" height="620" fill="#10141A"/>
+  <rect x="0" y="0" width="900" height="1300" fill="#FFFFFF"/>
 
-  <!-- header -->
-  <text x="40" y="42" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11.5" letter-spacing="2" fill="#2DD8B8">JENKINS MULTIBRANCH PIPELINE</text>
-  <text x="40" y="76" font-size="25" font-weight="700" fill="#E7ECF2">How a push becomes a running service</text>
-  <line x1="40" y1="98" x2="1360" y2="98" stroke="#2A313D" stroke-width="1"/>
+  <!-- ================= HEADER ================= -->
+  <text x="40" y="72" font-size="36" font-weight="800" fill="#14171C">How A <tspan fill="#E8632C">Push</tspan> Flows</text>
+  <text x="40" y="112" font-size="36" font-weight="800" fill="#14171C">Into Production</text>
+  <line x1="40" y1="126" x2="420" y2="126" stroke="#E8632C" stroke-width="5" stroke-linecap="round"/>
 
-  <!-- connecting belt line behind stage cards -->
-  <line x1="40" y1="245" x2="1365" y2="245" stroke="#2A313D" stroke-width="2"/>
+  <rect x="655" y="30" width="205" height="56" rx="28" fill="#FFFFFF" stroke="#D8DEE5" stroke-width="1.3"/>
+  <circle cx="686" cy="58" r="18" fill="#14171C"/>
+  <text x="686" y="63" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">NS</text>
+  <text x="713" y="54" font-size="13" font-weight="700" fill="#14171C">nikhilsaishankar</text>
+  <text x="713" y="70" font-size="10.5" fill="#8A93A1">microservices-project</text>
 
-  <!-- ===================== STAGE CARDS ===================== -->
-  <!-- Card 1: PUSH -->
-  <g>
-    <rect x="40" y="130" width="205" height="230" rx="10" fill="#181D26" stroke="#232A35" stroke-width="1.3"/>
-    <circle cx="74" cy="168" r="18" fill="none" stroke="#2DD8B8" stroke-width="1.8"/>
-    <use href="#i-push" x="60" y="154" width="28" height="28" color="#2DD8B8"/>
-    <text x="58" y="222" font-size="16" font-weight="700" fill="#E7ECF2">Push</text>
-    <text x="58" y="244" font-size="11.5" fill="#9AA5B1">Developer commits to</text>
-    <text x="58" y="260" font-size="11.5" fill="#9AA5B1">one service's branch.</text>
-    <line x1="58" y1="308" x2="227" y2="308" stroke="#232A35" stroke-width="1"/>
-    <rect x="58" y="322" width="129" height="26" rx="13" fill="#10141A" stroke="#2A313D" stroke-width="1"/>
-    <text x="122.5" y="339" text-anchor="middle" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="10.5" fill="#C7CFD8">git push</text>
+  <!-- ================= HANGING TAGS ================= -->
+  <line x1="40" y1="165" x2="260" y2="165" stroke="#14171C" stroke-width="1.3"/>
+  <circle cx="40" cy="165" r="4" fill="#FFFFFF" stroke="#14171C" stroke-width="1.3"/>
+  <circle cx="260" cy="165" r="4" fill="#FFFFFF" stroke="#14171C" stroke-width="1.3"/>
+  <line x1="46" y1="168" x2="63" y2="176" stroke="#14171C" stroke-width="1.1"/>
+  <line x1="254" y1="168" x2="237" y2="176" stroke="#14171C" stroke-width="1.1"/>
+  <rect x="55" y="174" width="190" height="40" rx="7" fill="#F7C9AE" stroke="#E8632C" stroke-width="1.3"/>
+  <text x="150" y="199" text-anchor="middle" font-size="14" font-weight="800" fill="#7A3414" letter-spacing="0.5">TRIGGER</text>
+
+  <line x1="640" y1="165" x2="860" y2="165" stroke="#14171C" stroke-width="1.3"/>
+  <circle cx="640" cy="165" r="4" fill="#FFFFFF" stroke="#14171C" stroke-width="1.3"/>
+  <circle cx="860" cy="165" r="4" fill="#FFFFFF" stroke="#14171C" stroke-width="1.3"/>
+  <line x1="646" y1="168" x2="663" y2="176" stroke="#14171C" stroke-width="1.1"/>
+  <line x1="854" y1="168" x2="837" y2="176" stroke="#14171C" stroke-width="1.1"/>
+  <rect x="655" y="174" width="190" height="40" rx="7" fill="#F7C9AE" stroke="#E8632C" stroke-width="1.3"/>
+  <text x="750" y="199" text-anchor="middle" font-size="14" font-weight="800" fill="#7A3414" letter-spacing="0.5">PER-SERVICE</text>
+
+  <!-- ================= DEVELOPER / PUSH ================= -->
+  <circle cx="450" cy="205" r="34" fill="#F0F2F5" stroke="#D8DEE5" stroke-width="1.3"/>
+  <g color="#14171C">
+    <use href="#i-person" x="433" y="188" width="34" height="34"/>
+  </g>
+  <text x="450" y="258" text-anchor="middle" font-size="15" font-weight="800" fill="#14171C">Developer</text>
+  <line x1="450" y1="264" x2="450" y2="300" stroke="#E8632C" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M443,293 L450,301 L457,293" fill="none" stroke="#E8632C" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="466" y="286" font-size="11" fill="#8A93A1">git push</text>
+
+  <!-- ================= RIBBONS ================= -->
+  <rect x="40" y="320" width="260" height="32" rx="16" fill="#BFF3E2"/>
+  <text x="170" y="341" text-anchor="middle" font-size="12.5" font-weight="700" fill="#0E7C63" letter-spacing="0.4">WHAT STARTS A BUILD</text>
+  <rect x="600" y="320" width="260" height="32" rx="16" fill="#BFF3E2"/>
+  <text x="730" y="341" text-anchor="middle" font-size="12.5" font-weight="700" fill="#0E7C63" letter-spacing="0.4">WHAT EACH BRANCH DOES</text>
+
+  <!-- ================= LEFT WING PILLS ================= -->
+  <g font-size="13" fill="#14171C">
+    <rect x="40" y="372" width="260" height="36" rx="18" fill="#EAFBF6" stroke="#12A187" stroke-width="1.4"/>
+    <text x="58" y="395">GitHub Webhook</text>
+    <rect x="40" y="418" width="260" height="36" rx="18" fill="#EAFBF6" stroke="#12A187" stroke-width="1.4"/>
+    <text x="58" y="441">Branch Source (SCM)</text>
+    <rect x="40" y="464" width="260" height="36" rx="18" fill="#EAFBF6" stroke="#12A187" stroke-width="1.4"/>
+    <text x="58" y="487">Scheduled poll</text>
+    <rect x="40" y="510" width="260" height="36" rx="18" fill="#EAFBF6" stroke="#12A187" stroke-width="1.4"/>
+    <text x="58" y="533">Scan Multibranch Now</text>
   </g>
 
-  <!-- Card 2: SCAN -->
-  <g>
-    <rect x="264" y="130" width="205" height="230" rx="10" fill="#181D26" stroke="#232A35" stroke-width="1.3"/>
-    <circle cx="298" cy="168" r="18" fill="none" stroke="#2DD8B8" stroke-width="1.8"/>
-    <use href="#i-scan" x="284" y="154" width="28" height="28" color="#2DD8B8"/>
-    <text x="282" y="222" font-size="16" font-weight="700" fill="#E7ECF2">Scan</text>
-    <text x="282" y="244" font-size="11.5" fill="#9AA5B1">Jenkins re-indexes</text>
-    <text x="282" y="260" font-size="11.5" fill="#9AA5B1">every branch on schedule.</text>
-    <line x1="282" y1="308" x2="451" y2="308" stroke="#232A35" stroke-width="1"/>
-    <rect x="282" y="322" width="163" height="26" rx="13" fill="#10141A" stroke="#2A313D" stroke-width="1"/>
-    <text x="363.5" y="339" text-anchor="middle" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="10.5" fill="#C7CFD8">Scan Multibranch Now</text>
+  <!-- ================= RIGHT WING PILLS ================= -->
+  <g font-size="13" fill="#14171C">
+    <rect x="600" y="372" width="260" height="36" rx="18" fill="#EAFBF6" stroke="#12A187" stroke-width="1.4"/>
+    <text x="618" y="395">Jenkinsfile</text>
+    <rect x="600" y="414" width="260" height="36" rx="18" fill="#EAFBF6" stroke="#12A187" stroke-width="1.4"/>
+    <text x="618" y="437">Dockerfile</text>
+    <rect x="600" y="456" width="260" height="36" rx="18" fill="#EAFBF6" stroke="#12A187" stroke-width="1.4"/>
+    <text x="618" y="479">docker build &amp;&amp; push</text>
+    <rect x="600" y="498" width="260" height="36" rx="18" fill="#EAFBF6" stroke="#12A187" stroke-width="1.4"/>
+    <text x="618" y="521">Build Executor Queue</text>
+    <rect x="600" y="540" width="260" height="36" rx="18" fill="#EAFBF6" stroke="#12A187" stroke-width="1.4"/>
+    <text x="618" y="563">Image tag :latest</text>
   </g>
 
-  <!-- Card 3: BUILD & PUSH -->
-  <g>
-    <rect x="488" y="130" width="205" height="230" rx="10" fill="#181D26" stroke="#2DD8B8" stroke-width="1.6"/>
-    <circle cx="522" cy="168" r="18" fill="#123B34" stroke="#2DD8B8" stroke-width="1.8"/>
-    <use href="#i-terminal" x="508" y="154" width="28" height="28" color="#2DD8B8"/>
-    <text x="506" y="222" font-size="16" font-weight="700" fill="#E7ECF2">Build &amp; Push</text>
-    <text x="506" y="244" font-size="11.5" fill="#9AA5B1">Only branches with new</text>
-    <text x="506" y="260" font-size="11.5" fill="#9AA5B1">commits queue a build.</text>
-    <line x1="506" y1="308" x2="675" y2="308" stroke="#2A313D" stroke-width="1"/>
-    <rect x="506" y="322" width="163" height="26" rx="13" fill="#10141A" stroke="#2A313D" stroke-width="1"/>
-    <text x="587.5" y="339" text-anchor="middle" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="10.5" fill="#C7CFD8">docker build &amp;&amp; push</text>
+  <!-- ================= CONNECTORS ================= -->
+  <g fill="none" stroke-dasharray="3 4">
+    <path d="M300,390 L320,439" stroke="#12A187" stroke-width="1.6"/>
+    <path d="M300,436 L320,439" stroke="#12A187" stroke-width="1.6"/>
+    <path d="M300,482 L320,439" stroke="#12A187" stroke-width="1.6"/>
+    <path d="M300,528 L320,439" stroke="#12A187" stroke-width="1.6"/>
+
+    <path d="M600,390 L580,599" stroke="#F2701C" stroke-width="1.6"/>
+    <path d="M600,432 L580,599" stroke="#F2701C" stroke-width="1.6"/>
+    <path d="M600,474 L580,599" stroke="#F2701C" stroke-width="1.6"/>
+    <path d="M600,516 L580,599" stroke="#F2701C" stroke-width="1.6"/>
+    <path d="M600,558 L580,599" stroke="#F2701C" stroke-width="1.6"/>
+  </g>
+  <circle cx="320" cy="439" r="4" fill="#12A187"/>
+  <circle cx="580" cy="599" r="4" fill="#F2701C"/>
+
+  <!-- ================= CENTRAL STACK ================= -->
+  <!-- 1. GitHub Repository -->
+  <rect x="320" y="372" width="260" height="54" rx="10" fill="#FDE6E9" stroke="#E8A9B2" stroke-width="1.4"/>
+  <circle cx="350" cy="399" r="17" fill="#24292F"/>
+  <use href="#i-git" x="336" y="385" width="28" height="28" color="#FFFFFF"/>
+  <text x="378" y="396" font-size="14.5" font-weight="800" fill="#14171C">GitHub Repository</text>
+  <text x="378" y="413" font-size="10.5" fill="#6B7682">One branch per microservice</text>
+
+  <path d="M440,433 L450,439 L460,433" fill="none" stroke="#14171C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M440,441 L450,447 L460,441" fill="none" stroke="#14171C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- 2. Multibranch Scan -->
+  <rect x="320" y="452" width="260" height="54" rx="10" fill="#FDE6E9" stroke="#E8A9B2" stroke-width="1.4"/>
+  <circle cx="350" cy="479" r="17" fill="#D24939"/>
+  <use href="#i-scan" x="336" y="465" width="28" height="28" color="#FFFFFF"/>
+  <text x="378" y="476" font-size="14.5" font-weight="800" fill="#14171C">Multibranch Scan</text>
+  <text x="378" y="493" font-size="10.5" fill="#6B7682">Re-indexes every branch on a scan</text>
+
+  <path d="M440,513 L450,519 L460,513" fill="none" stroke="#14171C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M440,521 L450,527 L460,521" fill="none" stroke="#14171C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- 3. Per-Branch Build -->
+  <rect x="320" y="532" width="260" height="54" rx="10" fill="#FDE6E9" stroke="#E8A9B2" stroke-width="1.4"/>
+  <circle cx="350" cy="559" r="17" fill="#F2701C"/>
+  <use href="#i-terminal" x="336" y="545" width="28" height="28" color="#FFFFFF"/>
+  <text x="378" y="556" font-size="14.5" font-weight="800" fill="#14171C">Per-Branch Build</text>
+  <text x="378" y="573" font-size="10.5" fill="#6B7682">Jenkinsfile: docker build &amp;&amp; push</text>
+
+  <path d="M440,593 L450,599 L460,593" fill="none" stroke="#14171C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M440,601 L450,607 L460,601" fill="none" stroke="#14171C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- 4. Docker Hub -->
+  <rect x="320" y="612" width="260" height="54" rx="10" fill="#FDE6E9" stroke="#E8A9B2" stroke-width="1.4"/>
+  <circle cx="350" cy="639" r="17" fill="#2496ED"/>
+  <use href="#i-layers" x="336" y="625" width="28" height="28" color="#FFFFFF"/>
+  <text x="378" y="636" font-size="14.5" font-weight="800" fill="#14171C">Docker Hub</text>
+  <text x="378" y="653" font-size="10.5" fill="#6B7682">nikhilkotharu/&lt;service&gt;:latest</text>
+
+  <path d="M440,673 L450,679 L460,673" fill="none" stroke="#14171C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M440,681 L450,687 L460,681" fill="none" stroke="#14171C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- 5. kubectl apply -->
+  <rect x="320" y="692" width="260" height="54" rx="10" fill="#FDE6E9" stroke="#E8A9B2" stroke-width="1.4"/>
+  <circle cx="350" cy="719" r="17" fill="#326CE5"/>
+  <use href="#i-helm" x="336" y="705" width="28" height="28" color="#FFFFFF"/>
+  <text x="378" y="716" font-size="14.5" font-weight="800" fill="#14171C">kubectl apply</text>
+  <text x="378" y="733" font-size="10.5" fill="#6B7682">Rolls the manifest onto EKS-1</text>
+
+  <path d="M440,753 L450,759 L460,753" fill="none" stroke="#14171C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M440,761 L450,767 L460,761" fill="none" stroke="#14171C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- 6. Running Pods -->
+  <rect x="320" y="772" width="260" height="54" rx="10" fill="#FDE6E9" stroke="#E8A9B2" stroke-width="1.4"/>
+  <circle cx="350" cy="799" r="17" fill="#16A34A"/>
+  <use href="#i-server" x="336" y="785" width="28" height="28" color="#FFFFFF"/>
+  <text x="378" y="796" font-size="14.5" font-weight="800" fill="#14171C">Running Pods</text>
+  <text x="378" y="813" font-size="10.5" fill="#6B7682">11 services + redis-cart</text>
+
+  <line x1="450" y1="826" x2="450" y2="846" stroke="#9AA5B1" stroke-width="1.6"/>
+
+  <!-- ================= INCLUDES ================= -->
+  <rect x="170" y="846" width="560" height="114" rx="10" fill="none" stroke="#B9C0C9" stroke-width="1.3" stroke-dasharray="5 4"/>
+  <text x="190" y="872" font-size="13" font-weight="800" fill="#14171C">Includes:</text>
+  <g font-size="12" fill="#4A525C">
+    <text x="190" y="898">&#8226; Deployment + ClusterIP Service</text>
+    <text x="190" y="920">&#8226; Namespace: webapps</text>
+    <text x="190" y="942">&#8226; Self-healing restarts (any)</text>
+    <text x="460" y="898">&#8226; LoadBalancer (frontend only)</text>
+    <text x="460" y="920">&#8226; kubeconfig via k8-token</text>
+    <text x="460" y="942">&#8226; EKS-1 managed control plane</text>
   </g>
 
-  <!-- Card 4: REGISTRY -->
-  <g>
-    <rect x="712" y="130" width="205" height="230" rx="10" fill="#181D26" stroke="#232A35" stroke-width="1.3"/>
-    <circle cx="746" cy="168" r="18" fill="none" stroke="#5B8DEF" stroke-width="1.8"/>
-    <use href="#i-layers" x="732" y="154" width="28" height="28" color="#5B8DEF"/>
-    <text x="730" y="222" font-size="16" font-weight="700" fill="#E7ECF2">Registry</text>
-    <text x="730" y="244" font-size="11.5" fill="#9AA5B1">Each image lands in</text>
-    <text x="730" y="260" font-size="11.5" fill="#9AA5B1">its own Docker Hub repo.</text>
-    <line x1="730" y1="308" x2="899" y2="308" stroke="#232A35" stroke-width="1"/>
-    <rect x="730" y="322" width="163" height="26" rx="13" fill="#10141A" stroke="#2A313D" stroke-width="1"/>
-    <text x="811.5" y="339" text-anchor="middle" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="10.5" fill="#C7CFD8">nikhilkotharu/&lt;service&gt;</text>
+  <!-- ================= FOUNDATION ================= -->
+  <rect x="60" y="1000" width="780" height="200" rx="10" fill="none" stroke="#D8DEE5" stroke-width="1.4"/>
+  <line x1="450" y1="1020" x2="450" y2="1180" stroke="#E9ECEF" stroke-width="1.3"/>
+  <rect x="350" y="985" width="200" height="32" rx="16" fill="#DCEBFC" stroke="#4C7FD6" stroke-width="1.3"/>
+  <text x="450" y="1006" text-anchor="middle" font-size="12.5" font-weight="800" fill="#1B3B73" letter-spacing="0.4">WHY THIS SCALES</text>
+
+  <g font-size="12.5" fill="#2B3138">
+    <circle cx="82" cy="1036" r="3.4" fill="#4C7FD6"/>
+    <text x="94" y="1041">One Jenkinsfile per branch</text>
+    <circle cx="82" cy="1064" r="3.4" fill="#4C7FD6"/>
+    <text x="94" y="1069">Multibranch auto-discovery</text>
+    <circle cx="82" cy="1092" r="3.4" fill="#4C7FD6"/>
+    <text x="94" y="1097">Scan-triggered, not full rebuild</text>
+    <circle cx="82" cy="1120" r="3.4" fill="#4C7FD6"/>
+    <text x="94" y="1125">Shared executor pool queues builds</text>
+    <circle cx="82" cy="1148" r="3.4" fill="#4C7FD6"/>
+    <text x="94" y="1153">Independent per-service images</text>
+
+    <circle cx="472" cy="1036" r="3.4" fill="#4C7FD6"/>
+    <text x="484" y="1041">One Docker Hub repo per service</text>
+    <circle cx="472" cy="1064" r="3.4" fill="#4C7FD6"/>
+    <text x="484" y="1069">Kubernetes Deployments + Services</text>
+    <circle cx="472" cy="1092" r="3.4" fill="#4C7FD6"/>
+    <text x="484" y="1097">Namespace isolation (webapps)</text>
+    <circle cx="472" cy="1120" r="3.4" fill="#4C7FD6"/>
+    <text x="484" y="1125">frontend exposed via LoadBalancer</text>
+    <circle cx="472" cy="1148" r="3.4" fill="#4C7FD6"/>
+    <text x="484" y="1153">EKS-1 in ap-south-1 (eksctl)</text>
   </g>
 
-  <!-- Card 5: DEPLOY -->
-  <g>
-    <rect x="936" y="130" width="205" height="230" rx="10" fill="#181D26" stroke="#232A35" stroke-width="1.3"/>
-    <circle cx="970" cy="168" r="18" fill="none" stroke="#5B8DEF" stroke-width="1.8"/>
-    <use href="#i-helm" x="956" y="154" width="28" height="28" color="#5B8DEF"/>
-    <text x="954" y="222" font-size="16" font-weight="700" fill="#E7ECF2">Deploy</text>
-    <text x="954" y="244" font-size="11.5" fill="#9AA5B1">Main branch rolls the</text>
-    <text x="954" y="260" font-size="11.5" fill="#9AA5B1">manifest onto EKS-1.</text>
-    <line x1="954" y1="308" x2="1123" y2="308" stroke="#232A35" stroke-width="1"/>
-    <rect x="954" y="322" width="163" height="26" rx="13" fill="#10141A" stroke="#2A313D" stroke-width="1"/>
-    <text x="1035.5" y="339" text-anchor="middle" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="10.5" fill="#C7CFD8">kubectl apply</text>
-  </g>
-
-  <!-- Card 6: LIVE -->
-  <g>
-    <rect x="1160" y="130" width="205" height="230" rx="10" fill="#181D26" stroke="#232A35" stroke-width="1.3"/>
-    <circle cx="1194" cy="168" r="18" fill="none" stroke="#E8A15D" stroke-width="1.8"/>
-    <use href="#i-globe" x="1180" y="154" width="28" height="28" color="#E8A15D"/>
-    <text x="1178" y="222" font-size="16" font-weight="700" fill="#E7ECF2">Live</text>
-    <text x="1178" y="244" font-size="11.5" fill="#9AA5B1">11 services + Redis</text>
-    <text x="1178" y="260" font-size="11.5" fill="#9AA5B1">serve traffic in webapps.</text>
-    <line x1="1178" y1="308" x2="1347" y2="308" stroke="#232A35" stroke-width="1"/>
-    <rect x="1178" y="322" width="163" height="26" rx="13" fill="#10141A" stroke="#2A313D" stroke-width="1"/>
-    <text x="1259.5" y="339" text-anchor="middle" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="10.5" fill="#C7CFD8">frontend &#8594; LoadBalancer</text>
-  </g>
-
-  <!-- arrows between cards -->
-  <g fill="none" stroke="#4A5568" stroke-width="1.8" stroke-linecap="round">
-    <path d="M250,245 L259,245 M255,240 L260,245 L255,250"/>
-    <path d="M474,245 L483,245 M479,240 L484,245 L479,250"/>
-    <path d="M698,245 L707,245 M703,240 L708,245 L703,250"/>
-    <path d="M922,245 L931,245 M927,240 L932,245 L927,250"/>
-    <path d="M1146,245 L1155,245 M1151,240 L1156,245 L1151,250"/>
-  </g>
-
-  <!-- ===================== INCREMENTAL BUILD, AT A GLANCE ===================== -->
-  <text x="40" y="404" font-size="12.5" font-weight="700" letter-spacing="1" fill="#2DD8B8">THIS SCAN, ONLY 3 OF 11 BRANCHES REBUILT</text>
-
-  <!-- row 1: active chips -->
-  <g>
-    <rect x="40" y="420" width="150" height="28" rx="14" fill="#123B34" stroke="#2DD8B8" stroke-width="1.3"/>
-    <circle cx="58" cy="434" r="4" fill="#2DD8B8"/>
-    <text x="70" y="438" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#E7ECF2">frontend</text>
-  </g>
-  <g>
-    <rect x="200" y="420" width="150" height="28" rx="14" fill="#123B34" stroke="#2DD8B8" stroke-width="1.3"/>
-    <circle cx="218" cy="434" r="4" fill="#2DD8B8"/>
-    <text x="230" y="438" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#E7ECF2">cartservice</text>
-  </g>
-  <g>
-    <rect x="360" y="420" width="150" height="28" rx="14" fill="#123B34" stroke="#2DD8B8" stroke-width="1.3"/>
-    <circle cx="378" cy="434" r="4" fill="#2DD8B8"/>
-    <text x="390" y="438" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#E7ECF2">paymentservice</text>
-  </g>
-
-  <!-- dimmed chips (unchanged, skipped) -->
-  <g stroke="#2A313D" stroke-width="1.3" fill="#161A22">
-    <rect x="520" y="420" width="150" height="28" rx="14"/>
-    <rect x="680" y="420" width="150" height="28" rx="14"/>
-    <rect x="840" y="420" width="150" height="28" rx="14"/>
-    <rect x="40" y="458" width="150" height="28" rx="14"/>
-    <rect x="200" y="458" width="150" height="28" rx="14"/>
-    <rect x="360" y="458" width="190" height="28" rx="14"/>
-    <rect x="560" y="458" width="190" height="28" rx="14"/>
-    <rect x="760" y="458" width="150" height="28" rx="14"/>
-  </g>
-  <g fill="none" stroke="#4A5568" stroke-width="1.4">
-    <circle cx="538" cy="434" r="4"/>
-    <circle cx="698" cy="434" r="4"/>
-    <circle cx="858" cy="434" r="4"/>
-    <circle cx="58" cy="472" r="4"/>
-    <circle cx="218" cy="472" r="4"/>
-    <circle cx="378" cy="472" r="4"/>
-    <circle cx="578" cy="472" r="4"/>
-    <circle cx="778" cy="472" r="4"/>
-  </g>
-  <g font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#6B7682">
-    <text x="550" y="438">adservice</text>
-    <text x="710" y="438">checkoutservice</text>
-    <text x="870" y="438">currencyservice</text>
-    <text x="70" y="476">emailservice</text>
-    <text x="230" y="476">loadgenerator</text>
-    <text x="390" y="476">productcatalogservice</text>
-    <text x="590" y="476">recommendationservice</text>
-    <text x="790" y="476">shippingservice</text>
-  </g>
-
-  <!-- legend -->
-  <circle cx="1050" cy="428" r="4" fill="#2DD8B8"/>
-  <text x="1062" y="432" font-size="11.5" fill="#C7CFD8">rebuilt this run</text>
-  <circle cx="1050" cy="466" r="4" fill="none" stroke="#4A5568" stroke-width="1.4"/>
-  <text x="1062" y="470" font-size="11.5" fill="#C7CFD8">unchanged &#8212; skipped</text>
-
-  <!-- footer -->
-  <line x1="40" y1="522" x2="1360" y2="522" stroke="#2A313D" stroke-width="1"/>
-  <text x="40" y="548" font-size="12.5" fill="#9AA5B1">Independent branches, independent images, one shared Kubernetes namespace.</text>
-  <text x="1360" y="548" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#4A5568">EKS-1 &#183; ap-south-1 &#183; webapps</text>
+  <!-- ================= SUMMARY STRIP ================= -->
+  <rect x="60" y="1220" width="780" height="60" rx="8" fill="#FAFAFA" stroke="#14171C" stroke-width="1.3"/>
+  <text x="450" y="1246" text-anchor="middle" font-size="13.5" font-weight="700" fill="#14171C">Build: only branches with new commits, one service at a time.</text>
+  <text x="450" y="1265" text-anchor="middle" font-size="12" fill="#6B7682">Deploy: main branch rolls the shared manifest onto EKS &#8212; namespace webapps.</text>
 </svg>
