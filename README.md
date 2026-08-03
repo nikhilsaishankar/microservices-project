@@ -43,46 +43,7 @@ and it defeats the purpose of a microservices architecture. Instead:
 
 ### Pipeline Overview
 
-```
- ┌──────────────┐
- │   Developer  │  git push (to ONE service branch, e.g. cartservice)
- │   (GitHub)   │────────────────┐
- └──────────────┘                │
-                                 ▼
- ┌───────────────────────────────────────────────────────────────────────┐
- │           JENKINS — Multibranch Pipeline job "Microservices-project"    │
- │                                                                         │
- │   "Scan Multibranch Pipeline Now" re-indexes the repo's branches:       │
- │   only branches with new commits are queued for a build — every        │
- │   other service's sub-job is left untouched (no full rebuild).          │
- │                                                                         │
- │   adservice  cartservice  checkoutservice  currencyservice  emailservice│
- │   frontend   loadgenerator  main  paymentservice  productcatalogservice │
- │   recommendationservice  shippingservice                                │
- │        │            │              │                                   │
- │        ▼            ▼              ▼                                   │
- │   each branch runs ITS OWN Jenkinsfile:                                 │
- │     1. docker build  -t nikhilkotharu/<service>:latest .                │
- │     2. docker push       nikhilkotharu/<service>:latest                 │
- │                                                                         │
- │   Builds queue on the shared executor pool and run one after another    │
- │   (or in parallel, up to the number of free executors) — never blocking │
- │   unrelated services.                                                   │
- └───────────────────────────────────────────┬───────────────────────────┘
-                                             │ docker push
-                                             ▼
-                                    ┌──────────────────┐
-                                    │    Docker Hub     │  nikhilkotharu/<service>
-                                    └────────┬─────────┘
-                                             │ kubectl apply (main branch Jenkinsfile)
-                                             ▼
- ┌───────────────────────────────────────────────────────────────────────┐
- │                    AWS EKS CLUSTER  (namespace: webapps)                 │
- │   adservice · cartservice · checkoutservice · currencyservice ·          │
- │   emailservice · frontend · paymentservice · productcatalogservice ·    │
- │   recommendationservice · shippingservice · redis-cart                  │
- └───────────────────────────────────────────────────────────────────────┘
-```
+**Developer** (`git push` to one service branch) → **GitHub** → **Jenkins Multibranch Scan** (only changed branches are queued) → **Per-Branch Build** (`docker build && push`) → **Docker Hub** (`nikhilkotharu/<service>`) → **kubectl apply** (main branch) → **AWS EKS** (`webapps` namespace)
 
 ### Step 1 — Create the Multibranch Pipeline job
 
